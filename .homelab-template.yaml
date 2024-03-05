@@ -12,7 +12,7 @@ helmVersion: ''
 ingress: false
 labels: ''
 name: intel-device-plugins-gpu
-namespace: intel
+namespace: intel-device-plugins-gpu
 pvc: false
 reloader: false
 resources: []
