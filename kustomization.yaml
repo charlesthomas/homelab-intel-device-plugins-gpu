@@ -8,6 +8,23 @@ commonAnnotations:
 
 resources:
 - resources/namespaces.yaml
+patches:
+- patch: |-
+    apiVersion: networking.k8s.io/v1
+    kind: Ingress
+    metadata:
+      name: intel-device-plugins-gpu
+      namespace: intel-device-plugins-gpu
+      annotations:
+        gethomepage.dev/href: https://intel-device-plugins-gpu.crt.house
+        gethomepage.dev/enabled: "true"
+        gethomepage.dev/description: 
+        gethomepage.dev/group: 
+        gethomepage.dev/icon: intel-device-plugins-gpu
+        gethomepage.dev/name: intel-device-plugins-gpu
+        gethomepage.dev/pod-selector: ""
+  target:
+    kind: Ingress
 helmCharts:
 - name: intel-device-plugins-gpu
   namespace: intel-device-plugins-gpu

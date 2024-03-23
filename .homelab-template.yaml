@@ -1,4 +1,4 @@
-_commit: v1.6.12-2-gb6b34ae
+_commit: v1.8.1
 _src_path: /home/crthomas/code/charlesthomas/homelab-template
 additionalResources: ''
 backups: false
@@ -9,6 +9,9 @@ helmRelease: intel-device-plugins-gpu
 helmRepo: https://intel.github.io/helm-charts/
 helmValues: helm/values.yaml
 helmVersion: ''
+homepageEnabled: true
+ingHost: intel-device-plugins-gpu.crt.house
+ingName: intel-device-plugins-gpu
 ingress: false
 labels: ''
 name: intel-device-plugins-gpu
