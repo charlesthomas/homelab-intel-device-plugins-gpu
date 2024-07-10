@@ -19,6 +19,9 @@ spec:
     automated:
       prune: true
       selfHeal: true
+    syncOptions:
+    - ApplyOutOfSyncOnly=true
+    - ServerSideApply=true
   ignoreDifferences:
     - group: deviceplugin.intel.com
       kind: GpuDevicePlugin
