@@ -8,9 +8,5 @@ commonAnnotations:
 
 resources:
 - resources/namespaces.yaml
-helmCharts:
-- name: intel-device-plugins-gpu
-  namespace: intel-device-plugins-gpu
-  releaseName: intel-device-plugins-gpu
-  repo: https://intel.github.io/helm-charts/
-  valuesFile: helm/values.yaml
+- resources/gpu-device-plugin.yaml
+- resources/node-feature-rules.yaml
